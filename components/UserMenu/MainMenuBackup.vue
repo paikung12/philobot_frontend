@@ -66,16 +66,12 @@
             <UserMenu-NavbarLink path="/" title="Home" :icon="require('~/static/png/018-pantone.png')"></UserMenu-NavbarLink>
             <UserMenu-NavbarLink v-if="kyc.user_verified" path="/transaction" title="Transaction" :icon="require('~/static/png/5260274.png')"></UserMenu-NavbarLink>
             <!-- <UserMenu-NavbarLink path="/partner" title="E-commerce" :icon="mdi-handshake-outline"></UserMenu-NavbarLink> -->
-            <UserMenu-NavbarLink v-if="kyc.user_verified" path="/forex" title="Forex Broker" :icon="require('~/static/png/5180646.png')"></UserMenu-NavbarLink>
             <UserMenu-NavMenuSectionTitle title="Product"></UserMenu-NavMenuSectionTitle>
-            <UserMenu-NavbarLink v-if="kyc.user_verified" path="/semiauto" title="EA" :icon="require('~/static/png/023-app-store.png')"></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink v-if="kyc.user_verified" path="/signals" title="Indicator" :icon="require('~/static/png/speedometer.png')"></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink v-if="kyc.user_verified" path="/copytrade" title=" Copy Trade" :icon="require('~/static/png/016-cp.png')"></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink v-if="kyc.user_verified" path="/accountstatus" title="History Account" :icon="require('~/static/png/010-workinghours.png')"></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink path="/account" title="Account Setting" :icon="require('~/static/png/034-designthinking.png')"></UserMenu-NavbarLink>
 
             <UserMenu-NavMenuSectionTitle title="USER SETTING"></UserMenu-NavMenuSectionTitle>
 
-            <UserMenu-NavbarLink path="/account" title="Account Setting" :icon="require('~/static/png/034-designthinking.png')"></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink v-if="kyc.user_verified" path="/accountstatus" title="History Account" :icon="require('~/static/png/010-workinghours.png')"></UserMenu-NavbarLink>
         </v-list>
 
         <template v-slot:append>

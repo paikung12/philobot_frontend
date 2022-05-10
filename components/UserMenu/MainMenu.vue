@@ -1,7 +1,7 @@
 <template>
 <div class="bg-main " v-if="response">
 
-    <v-app-bar color="bg-navx" fixed class="w-full">
+    <v-app-bar color="bg-navx"  class="w-full">
         <div class="boxed-container w-full">
             <div class="d-flex align-center mx-6">
                 <!-- Left Content -->
@@ -23,8 +23,8 @@
 
                     Point : {{$comma(point.current)}}
                 </vs-button> -->
-                <v-btn rounded color="success"><img class="w-8" src="~/static/png/3213595.png" alt=""> <span class="font-semibold ml-1">{{$comma(point.current)}}</span> </v-btn>
-                <v-btn rounded class="ml-2" @click="checkReward()" color="success"><img class="w-6" src="~/static/png/trophy.png" alt=""><span class="capitalize font-semibold ml-1 hidden md:block">Volting</span> </v-btn>
+                <!-- <v-btn rounded color="success"><img class="w-8" src="~/static/png/3213595.png" alt=""> <span class="font-semibold ml-1">{{$comma(point.current)}}</span> </v-btn>
+                <v-btn rounded class="ml-2" @click="checkReward()" color="success"><img class="w-6" src="~/static/png/trophy.png" alt=""><span class="capitalize font-semibold ml-1 hidden md:block">Volting</span> </v-btn> -->
                 <!-- <v-btn @click="logout()" rounded text > <img class="w-7" src="~/static/png/1828490.png" alt="">  </v-btn> -->
                 <!-- <div>
                     <div class="flex  gap-3 items-center font-semibold text-gray-800 p-3 rounded-md hover:cursor-pointer ">
@@ -71,11 +71,16 @@
 
         <v-list expand shaped class="  ">
             <UserMenu-NavbarLink path="/" title="Home" :icon="require('~/static/png/018-pantone.png')"></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink v-if="kyc.user_verified" path="/ea" title="EA" :icon="require('~/static/png/2578759.png')"></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink v-if="kyc.user_verified" path="/history" title="History" :icon="require('~/static/png/5180646.png')"></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink  path="/overview" title="Overview" :icon="require('~/static/png/2578759.png')"></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink  path="/robottrade" title="Robot Trade" ></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink  path="/profittest" title="Profit Test" ></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink path="/factory" title="Factory" ></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink  path="/refferaly" title="Refferral" ></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink  path="/consult" title="Consult" ></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink  path="/level" title="level" ></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink  path="/setting" title="Setting" ></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink path="/account" title="Account Setting" ></UserMenu-NavbarLink>
             <UserMenu-NavMenuSectionTitle title="User Setting"></UserMenu-NavMenuSectionTitle>
-
-            <UserMenu-NavbarLink path="/account" title="Account Setting" :icon="require('~/static/png/034-designthinking.png')"></UserMenu-NavbarLink>
             <div @click="logout()">
                 <UserMenu-NavbarLink path="/logout" title="Logout" :icon="require('~/static/png/1828490.png')"></UserMenu-NavbarLink>
             </div>
@@ -111,7 +116,7 @@ export default {
             if (check) {
                 await Auth.logout();
                 await location.reload();
-            }else{
+            } else {
                 await this.$router.push(`/`)
             }
 
@@ -125,10 +130,10 @@ export default {
         async initial() {
             this.form = await Core.getHttp(`/api/account/userprofile/${this.user.id}/`)
         },
-        async checkReward(){
-            if(this.$route.path == '/'){
+        async checkReward() {
+            if (this.$route.path == '/') {
                 await location.reload()
-            }else{
+            } else {
                 await this.$router.push('/')
             }
         }

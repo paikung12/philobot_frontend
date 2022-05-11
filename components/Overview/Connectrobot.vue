@@ -168,8 +168,15 @@
                         <v-text-field color="error" label="Sell" append-icon="mdi-cart-arrow-up" outlined></v-text-field>
                     </div>
 
-                    <div class="mb-5 my-px px-px w-full sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:w-full lg:my-px lg:px-px lg:w-full xl:my-1 xl:px-1 xl:w-1/2">
+                    <div class=" my-px px-px w-full sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:w-full lg:my-px lg:px-px lg:w-full xl:my-1 xl:px-1 xl:w-1/2">
                         <v-text-field label="Buy" append-icon="mdi-cart-arrow-down" outlined></v-text-field>
+                    </div>
+                    <div class="my-px px-px w-full sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:w-full lg:my-px lg:px-px lg:w-full xl:my-1 xl:px-1 xl:w-1/2">
+                        <v-text-field  label="TimeFrame open" append-icon="mdi-clock-outline " outlined></v-text-field>
+                    </div>
+
+                    <div class="mb-5 my-px px-px w-full sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:w-full lg:my-px lg:px-px lg:w-full xl:my-1 xl:px-1 xl:w-1/2">
+                        <v-text-field color="error" label="TimeFrame close" append-icon="mdi-clock-outline " outlined></v-text-field>
                     </div>
 
                     <v-btn block color="#4ade80" class="product-upgrade-to-pro ">

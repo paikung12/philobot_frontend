@@ -1,85 +1,103 @@
 <template>
-<div class="bg-main " v-if="response">
+<div class="bg-gray-100 " v-if="response">
 
-    <v-app-bar color="bg-navx"  class="w-full">
-        <div class="boxed-container w-full">
-            <div class="d-flex align-center mx-6">
-                <!-- Left Content -->
-                <v-app-bar-nav-icon class="d-block d-lg-none me-2" @click="isDrawerOpen = !isDrawerOpen"></v-app-bar-nav-icon>
-                <router-link to="/" class="invisible md:visible me-2 ">
-                    <center>
-                        <v-slide-x-transition>
-                            <img class="h-9" src="~/static/png/logow.png" alt="">
-                        </v-slide-x-transition>
-                    </center>
-                </router-link>
-                <v-spacer></v-spacer>
+    <div class="p-3 mt-4 lg:ml-64">
+        <div class="flex">
+            <div class=" w-5/6">
+                <div class="flex w-full h-full">
+                    <div class="w-11/12">
+                        <v-slide-group show-arrows class="w-full ">
+                            <v-slide-item v-for="n,index in 4" :key="index" style="width:350px;">
+                                <div class=" ml-4 pb-5" v-if="test[index]">
+                                    <div class="flex cursor-pointer  rounded-xl bg-white shadow-lg ">
+                                        <img class="rounded-full w-20 h-20 m-2 mt-3" src="https://i.pinimg.com/originals/41/53/7d/41537d55a8ab360ad9300060579a8287.gif" alt="">
+                                        <div class="relative  space-y-1 p-4">
+                                            <h4 class="text-lg text-green-500">Rebalance</h4>
+                                            <div class="relative h-6 text-green-400 text-sm">
+                                                <span class="transition duration-300 group-hover:invisible group-hover:opacity-0">UID: 12234123</span>
 
-                <v-btn v-if="!kyc.user_verified" @click="$router.push('/account')" dark color="#FF0000" rounded class="hidden md:block mr-1">
-                    <v-icon style="color:white;" class="mr-2">mdi-account-alert</v-icon> <span class="hidden md:block">ยังไม่ได้ยืนยันตัวตน KYC</span>
-                </v-btn>
-                <!-- <vs-button color="#4ade80" floating class="my-point">
-                  <v-icon style="color:white;" class="mr-2">mdi-bitcoin</v-icon> 
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-3 ">
+                                            <v-chip class="m-1 " color="#4ade80" label><span class="text-sm p-2 text-white">connect</span></v-chip>
+                                            <v-chip class="m-1 " color="#4ade80" label><span class="text-sm p-2 text-white">working</span></v-chip>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" ml-2" v-else>
+                                    <div class="h-full  group relative flex  justify-between rounded-xl before:absolute before:inset-y-0 before:right-0 before:w-1/2 before:rounded-r-xl before:bg-gradient-to-r before:from-transparent before:to-amber-600 before:opacity-0 before:transition before:duration-500 ">
 
-                    Point : {{$comma(point.current)}}
-                </vs-button> -->
-                <!-- <v-btn rounded color="success"><img class="w-8" src="~/static/png/3213595.png" alt=""> <span class="font-semibold ml-1">{{$comma(point.current)}}</span> </v-btn>
-                <v-btn rounded class="ml-2" @click="checkReward()" color="success"><img class="w-6" src="~/static/png/trophy.png" alt=""><span class="capitalize font-semibold ml-1 hidden md:block">Volting</span> </v-btn> -->
-                <!-- <v-btn @click="logout()" rounded text > <img class="w-7" src="~/static/png/1828490.png" alt="">  </v-btn> -->
-                <!-- <div>
-                    <div class="flex  gap-3 items-center font-semibold text-gray-800 p-3 rounded-md hover:cursor-pointer ">
-                        <vs-avatar history success class="hidden md:block sm:block xs:block">
-                            <img v-if="!imageProfile" src="~/static/images/avatars/1.png">
-                            <img v-else class="w-10 h-10 rounded-full" :src="$url+imageProfile" alt="Rebecca Burke">
-                        </vs-avatar>
-                        <div class="flex flex-col">
-                            <div class="text-green-400 hidden md:block sm:block xs:block ">
-                                {{user.display_name}}
+                                    </div>
+                                </div>
+                            </v-slide-item>
+                        </v-slide-group>
+                    </div>
+                    <div class="w-1/12 flex flex-col pt-3">
+                        <v-btn outlined x-small class="m-1" fab color="success">
+                            <v-icon>mdi-plus </v-icon>
+                        </v-btn>
+                        <v-btn outlined x-small class="m-1" fab color="error">
+                            <v-icon>mdi-minus </v-icon>
+                        </v-btn>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-1/2 lg:-ml-16">
+                <div class="flex flex-wrap overflow-hidden sm:-mx-px md:-mx-px lg:-mx-px xl:-mx-1">
+                    <div class=" ml-4 pb-5 flex ">
+                        <div class="flex  cursor-pointer  rounded-xl bg-white shadow-lg ">
+                            <div class="flex flex-row relative  space-y-1 p-3">
+                                <div class="flex gap-2 p-4 ">
+                                    <div class="pt-2 flex gap-2">
+                                         <span class="flex items-center transition ease-out duration-300 hover:bg-green-500 hover:text-white bg-green-200 w-8 h-8 px-1 rounded-full text-blue-400 cursor-pointer">
+                                    </span>
+                                    <span class="flex items-center transition ease-out duration-300 hover:bg-green-500 hover:text-white bg-green-200 w-8 h-8 px-1 rounded-full text-blue-400 cursor-pointer">
+                                        
+                                    </span>
+                                    <span class="flex items-center transition ease-out duration-300 hover:bg-green-500 hover:text-white bg-green-200 w-8 h-8 px-1 rounded-full text-blue-400 cursor-pointer">
+                                        
+                                    </span>
+                                    </div>
+                                   
+                                    <v-chip class="ma-2" color="primary" label>
+                                        <v-icon left>
+                                            mdi-account-circle-outline
+                                        </v-icon>
+                                        Basics
+                                    </v-chip>
+                                </div>
+
                             </div>
-                            <div class="text-gray-400 text-sm font-normal hidden md:block sm:block xs:block">
-                                {{user.first_name}} {{user.last_name}}
-                            </div>
+
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
-    </v-app-bar>
+    </div>
 
     <v-navigation-drawer clipped app floating width="260" class="app-navigation-menu  bguui shadow-2xl " :right="$vuetify.rtl" v-model="isDrawerOpen">
 
         <div class="invisible md:visible  mt-4 ">
             <center>
-                <img class="h-9" src="~/static/png/logo.png" alt="">
+                PHILOBOT
             </center>
         </div>
 
-        <div class="p-6 flex flex-col items-center md:mt-6">
-
-            <vs-avatar class="shadow-xl" badge-position="top-right" :badge-color="tier.color" size="150" circle>
-                <img v-if="user.image_profile" :src="$url+user.image_profile" alt="">
-                <img v-else src="https://i.pinimg.com/originals/4a/6a/cb/4a6acb8ab84a58ca85ef817b02de7067.jpg" alt="">
-                <template #badge>
-                    {{tier.name}}
-                </template>
-            </vs-avatar>
-
-            <h2 v-if="user.display_name" class="text-2xl font-semibold mt-2">{{user.display_name}}</h2>
-            <h2 v-else class="text-2xl font-semibold">{{user.first_name}}</h2>
-            <h2>{{user.email}}</h2>
-        </div>
+        
 
         <v-list expand shaped class="  ">
-            <UserMenu-NavbarLink path="/" title="Home" :icon="require('~/static/png/018-pantone.png')"></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink  path="/overview" title="Overview" :icon="require('~/static/png/2578759.png')"></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink  path="/robottrade" title="Robot Trade" ></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink  path="/profittest" title="Profit Test" ></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink path="/factory" title="Factory" ></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink  path="/refferaly" title="Refferral" ></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink  path="/consult" title="Consult" ></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink  path="/level" title="level" ></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink  path="/setting" title="Setting" ></UserMenu-NavbarLink>
-            <UserMenu-NavbarLink path="/account" title="Account Setting" ></UserMenu-NavbarLink>
+            <!-- <UserMenu-NavbarLink path="/" title="Home" :icon="require('~/static/png/018-pantone.png')"></UserMenu-NavbarLink> -->
+            <UserMenu-NavbarLink path="/overview" title="Overview" :icon="require('~/static/png/2578759.png')"></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink path="/robottrade" title="Robot Trade"></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink path="/profittest" title="Profit Test"></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink path="/factory" title="Factory"></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink path="/refferaly" title="Refferral"></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink path="/consult" title="Consult"></UserMenu-NavbarLink>
+            <UserMenu-NavbarLink path="/level" title="Level"></UserMenu-NavbarLink>
+            <!-- <UserMenu-NavbarLink path="/setting" title="Setting"></UserMenu-NavbarLink> -->
+            <UserMenu-NavbarLink path="/account" title="Account Setting"></UserMenu-NavbarLink>
             <UserMenu-NavMenuSectionTitle title="User Setting"></UserMenu-NavMenuSectionTitle>
             <div @click="logout()">
                 <UserMenu-NavbarLink path="/logout" title="Logout" :icon="require('~/static/png/1828490.png')"></UserMenu-NavbarLink>
@@ -101,9 +119,19 @@ import {
 import {
     Web
 } from '~/vuexes/web'
+import {
+    VueperSlides,
+    VueperSlide
+} from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
 export default {
+    components: {
+        VueperSlides,
+        VueperSlide
+    },
     data() {
         return {
+            test: [1, 2, 3, ],
             isDrawerOpen: true,
             kyc: {},
             form: {},

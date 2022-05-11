@@ -1,7 +1,6 @@
 <template>
 <div>
     <v-card-title>
-
         <span class="text-h6 font-weight-light">Your Balance</span>
         <div class="flex justify-end">
             <v-tooltip  color="#4ade80" top>

@@ -123,11 +123,11 @@
                                         Password</label>
                                     <v-text-field outlined dense></v-text-field>
                                     <div class="pt-8">
-                                         <v-btn color="#4ade80" block class="product-upgrade-to-pro1 " @click="dialog = false">
-                                        <span class="text-white">withdraw money </span>
-                                    </v-btn>
+                                        <v-btn color="#4ade80" block class="product-upgrade-to-pro1 " @click="dialog = false">
+                                            <span class="text-white">withdraw money </span>
+                                        </v-btn>
                                     </div>
-                                   
+
                                 </div>
                             </div>
                         </div>

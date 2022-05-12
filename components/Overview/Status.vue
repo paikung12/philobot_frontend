@@ -6,7 +6,7 @@
         </div>
         <div class="my-1 px-1 w-full  sm:my-1 sm:px-1 sm:w-full md:my-1 md:px-1 md:w-full lg:my-1 lg:px-1 lg:w-full xl:my-1 xl:px-1 xl:w-3/5">
             <v-card-title>
-                ROBOT STARTING
+                <p class="text-lg">ROBOT STARTING</p>
                 <div class="flex justify-end">
                     <v-tooltip color="#4ade80" top>
                         <template v-slot:activator="{ on, attrs }">
@@ -25,7 +25,7 @@
             <v-divider class="mx-4 -mt-2"></v-divider>
             <div class="flex flex-wrap -mx-1  sm:-mx-1 md:-mx-1 lg:-mx-1 xl:-mx-1">
                 <div class="my-1 px-1 w-full  sm:my-1 sm:px-1 sm:w-full md:my-1 md:px-1 md:w-full lg:my-1 lg:px-1 lg:w-full xl:my-1 xl:px-1 xl:w-1/2">
-                    <v-chip class="ma-2 shadow-lg" color="#ffff" label text-color="white">
+                    <v-chip class="valhalla2 ma-2 shadow-lg" color="#ffff" label text-color="white">
                         <v-avatar>
                             <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png">
                         </v-avatar>
@@ -33,7 +33,7 @@
                     </v-chip>
                 </div>
                 <div class="my-1 px-1 w-full  sm:my-1 sm:px-1 sm:w-full md:my-1 md:px-1 md:w-full lg:my-1 lg:px-1 lg:w-full xl:my-1 xl:px-1 xl:w-1/2">
-                    <v-chip class="ma-2 shadow-lg" color="#ffff" label text-color="white">
+                    <v-chip class="valhalla2  ma-2 shadow-lg" color="#ffff" label text-color="white">
                         <v-avatar>
                             <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png">
                         </v-avatar>
@@ -41,7 +41,7 @@
                     </v-chip>
                 </div>
                 <div class="my-1 px-1 w-full  sm:my-1 sm:px-1 sm:w-full md:my-1 md:px-1 md:w-full lg:my-1 lg:px-1 lg:w-full xl:my-1 xl:px-1 xl:w-1/2">
-                    <v-chip class="ma-2 shadow-lg" color="#ffff" label text-color="white">
+                    <v-chip class="valhalla2  ma-2 shadow-lg" color="#ffff" label text-color="white">
                         <v-avatar>
                             <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png">
                         </v-avatar>
@@ -49,7 +49,7 @@
                     </v-chip>
                 </div>
                 <div class="my-1 px-1 w-full  sm:my-1 sm:px-1 sm:w-full md:my-1 md:px-1 md:w-full lg:my-1 lg:px-1 lg:w-full xl:my-1 xl:px-1 xl:w-1/2">
-                    <v-chip class="ma-2 shadow-lg" color="#ffff" label text-color="white">
+                    <v-chip class="valhalla2  ma-2 shadow-lg" color="#ffff" label text-color="white">
                         <v-avatar>
                             <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png">
                         </v-avatar>
@@ -59,7 +59,7 @@
             </div>
         </div>
         <v-card-title>Trading History</v-card-title>
-        <v-data-table :headers="headers" :items="desserts" :items-per-page="5" class=" -mt-2 m-4 shadow-lg"></v-data-table>
+        <v-data-table  :headers="headers" :items="desserts" :items-per-page="5"  class=" -mt-2 m-4 shadow-lg"></v-data-table>
     </div>
     <div class="lg:h-full py-8 px-6 text-gray-600 rounded-xl mt-12 ">
         <svg class="w-40 m-auto" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">

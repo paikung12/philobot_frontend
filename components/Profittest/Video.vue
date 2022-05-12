@@ -16,7 +16,7 @@
         </div>
     </v-card-title>
     <div>
-        <div class=" w-60 rounded p-2">
+        <div class=" w-full rounded p-2">
             <div class="ml-4">
                 <div class="group relative ">
                     <img alt="Placeholder" class="block h-48 w-full rounded" src="https://cdn.dribbble.com/users/728794/screenshots/6383413/r1.gif">

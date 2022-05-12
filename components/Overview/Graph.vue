@@ -15,7 +15,7 @@
             </v-tooltip>
         </div>
     </v-card-title>
-    <div class="h-full py-6 px-6 rounded-xl  bg-white">
+    <div class="valhalla2 h-full py-6 px-6 rounded-xl  bg-white">
         <v-img class=" h-80 rounded-2xl " rounded-lg src="https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/ESNVE4J7AZA4LNIFTNOP5LVRJA.png"></v-img>
     </div>
 

@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="bg-white ">
+    <div class="secondary bg-white ">
         <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center ">
             <div class="p-5 w-48 mt-8">
                 <div class="text-xs uppercase text-gray-500 font-medium">Home</div>
@@ -29,10 +29,10 @@
         </div>
     </div>
 
-    <div class="bg-white pt-2 ">
-        <div class="flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col
+    <div class="secondary bg-white  pt-2 ">
+        <div class="secondary flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col
       md:flex-row max-w-6xl">
-            <div class="mt-2">© Copyright 2020. All Rights Reserved.</div>
+            <div class="text-gray-800 mt-2">© Copyright 2020. All Rights Reserved.</div>
             <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
               
             </div>

@@ -14,8 +14,6 @@ export default {
         base: "/Duplicatephilobot/"
     },
     // Glob
-
-
     head: {
         titleTemplate: '%s - philobot_frontend',
         title: 'philobot_frontend',
@@ -89,22 +87,28 @@ export default {
             dark: false,
             themes: {
                 light: {
-                    primary: '#4ade80',
+                    primary: '#1698f9',
                     accent: '#0d6efd',
-                    secondary: '#8A8D93',
-                    success: '#56CA00',
+                    secondary: '#f1f5f9',
+                    success: '#4ade80',
                     info: '#16B1FF',
                     warning: '#FFB400',
                     error: '#FF4C51',
+                    whitetext:'#ffff',
+                     
                 },
                 dark: {
                     primary: '#1698f9',
                     accent: '#0d6efd',
-                    secondary: '#8A8D93',
-                    success: '#56CA00',
+                    secondary: '#242135',
+                    success: '#4ade80',
                     info: '#16B1FF',
                     warning: '#FFB400',
                     error: '#FF4C51',
+                    valhalla:'#292744',
+                    valhalla2:'#332F56',
+                    whitetext:'#ffff',
+                    crypto:""
                 },
             },
         }

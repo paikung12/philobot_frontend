@@ -20,16 +20,16 @@
     <div class="flex flex-wrap -mx-px  sm:-mx-px md:-mx-px lg:-mx-px xl:-mx-1">
         <div class="my-px px-px w-full  sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:w-full lg:my-px lg:px-px lg:w-full xl:my-1 xl:px-1 xl:w-1/2">
             <div class="p-6 -mt-5">
-                <label class="text-sm   text-gray-700 tracking-wide flex ">Why do you want to build a Robot?</label>
-                <v-text-field   outlined dense></v-text-field>
-                <label class="text-sm  text-gray-700 tracking-wide flex ">
+                <label class="text-sm    tracking-wide flex ">Why do you want to build a Robot?</label>
+                <v-text-field outlined dense></v-text-field>
+                <label class="text-sm tracking-wide flex ">
                     Have you ever used any of our bots?</label>
-                <v-text-field   outlined dense></v-text-field>
-                <label class="text-sm   text-gray-700 tracking-wide flex ">
+                <v-text-field outlined dense></v-text-field>
+                <label class="text-sm    tracking-wide flex ">
                     Which market are you interested in wanting the robot to go with? (Future/Spot)</label>
-                <v-text-field   outlined dense></v-text-field>
-                <label class="text-sm   text-gray-700 tracking-wide flex ">How do you think having a robot can help you trade?</label>
-                <v-text-field   outlined dense></v-text-field>
+                <v-text-field outlined dense></v-text-field>
+                <label class="text-sm    tracking-wide flex ">How do you think having a robot can help you trade?</label>
+                <v-text-field outlined dense></v-text-field>
             </div>
         </div>
 
@@ -37,9 +37,9 @@
 
         <div class="my-px px-px w-full  sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:w-full lg:my-px lg:px-px lg:w-full xl:my-1 xl:px-1 xl:w-1/2">
             <div class="p-1 ml-3">
-                <label class="text-sm   text-gray-700 tracking-wide flex ">
+                <label class="text-sm    tracking-wide flex ">
                     Describe the automated training system you need.</label>
-                <v-textarea outlined name="input-7-4"  ></v-textarea>
+                <v-textarea outlined name="input-7-4"></v-textarea>
                 <div class="-mt-5">
                     <span class="text-sm underline text-green-400  flex ">
                         Get a discount for creating a trading robot of 7000 baht for VIP level only.</span>

@@ -1,5 +1,5 @@
 <template>
-<div class="bg-gray-100 " v-if="response">
+<div class="secondary " v-if="response">
 
     <div class="p-3 mt-4 lg:ml-64">
         <div class="flex">
@@ -9,18 +9,17 @@
                         <v-slide-group show-arrows class="w-full ">
                             <v-slide-item v-for="n,index in 4" :key="index" style="width:350px;">
                                 <div class=" ml-4 pb-5" v-if="test[index]">
-                                    <div class="flex cursor-pointer  rounded-xl bg-white shadow-lg ">
+                                    <div class="flex valhalla2 cursor-pointer  rounded-xl bg-white shadow-lg ">
                                         <img class="rounded-full w-20 h-20 m-2 mt-3" src="https://i.pinimg.com/originals/41/53/7d/41537d55a8ab360ad9300060579a8287.gif" alt="">
                                         <div class="relative  space-y-1 p-4">
                                             <h4 class="text-lg text-green-500">Rebalance</h4>
                                             <div class="relative h-6 text-green-400 text-sm">
                                                 <span class="transition duration-300 group-hover:invisible group-hover:opacity-0">UID: 12234123</span>
-
                                             </div>
                                         </div>
                                         <div class="flex flex-col p-3 ">
-                                            <v-chip class="m-1 " color="#4ade80" label><span class="text-sm p-2 text-white">connect</span></v-chip>
-                                            <v-chip class="m-1 " color="#4ade80" label><span class="text-sm p-2 text-white">working</span></v-chip>
+                                            <v-chip class="m-1 " color="success" label><span class="text-sm p-2 text-white">connect</span></v-chip>
+                                            <v-chip class="m-1 " color="success" label><span class="text-sm p-2 text-white">working</span></v-chip>
                                         </div>
                                     </div>
                                 </div>
@@ -43,23 +42,24 @@
                 </div>
 
             </div>
-            <div class="w-1/2 lg:-ml-16">
-                <div class="flex flex-wrap overflow-hidden sm:-mx-px md:-mx-px lg:-mx-px xl:-mx-1">
+            <div class="w-1/2 md:-ml-8 lg:-ml-16">
+                <div class="flex flex-wrap  sm:-mx-px md:-mx-px lg:-mx-px xl:-mx-1">
                     <div class=" ml-4 pb-5 flex ">
-                        <div class="flex  cursor-pointer  rounded-xl bg-white shadow-lg ">
+                        <div class="valhalla2 flex  cursor-pointer  rounded-xl bg-white shadow-lg ">
                             <div class="flex flex-row relative  space-y-1 p-3">
                                 <div class="flex gap-2 p-4 ">
                                     <div class="pt-2 flex gap-2">
-                                         <span class="flex items-center transition ease-out duration-300 hover:bg-green-500 hover:text-white bg-green-200 w-8 h-8 px-1 rounded-full text-blue-400 cursor-pointer">
-                                    </span>
-                                    <span class="flex items-center transition ease-out duration-300 hover:bg-green-500 hover:text-white bg-green-200 w-8 h-8 px-1 rounded-full text-blue-400 cursor-pointer">
-                                        
-                                    </span>
-                                    <span class="flex items-center transition ease-out duration-300 hover:bg-green-500 hover:text-white bg-green-200 w-8 h-8 px-1 rounded-full text-blue-400 cursor-pointer">
-                                        
-                                    </span>
+                                        <span class="flex items-center transition ease-out duration-300 hover:bg-green-500 hover:text-white bg-green-200 w-8 h-8 px-1 rounded-full text-blue-400 cursor-pointer">
+                                        <v-btn @click="switchDark()" >1</v-btn>
+                                        </span>
+                                        <span class="flex items-center transition ease-out duration-300 hover:bg-green-500 hover:text-white bg-green-200 w-8 h-8 px-1 rounded-full text-blue-400 cursor-pointer">
+
+                                        </span>
+                                        <span class="flex items-center transition ease-out duration-300 hover:bg-green-500 hover:text-white bg-green-200 w-8 h-8 px-1 rounded-full text-blue-400 cursor-pointer">
+
+                                        </span>
                                     </div>
-                                   
+
                                     <v-chip class="ma-2" color="primary" label>
                                         <v-icon left>
                                             mdi-account-circle-outline
@@ -77,15 +77,13 @@
         </div>
     </div>
 
-    <v-navigation-drawer clipped app floating width="260" class="app-navigation-menu  bguui shadow-2xl " :right="$vuetify.rtl" v-model="isDrawerOpen">
+    <v-navigation-drawer clipped app floating width="260" class="valhalla app-navigation-menu    shadow-2xl " :right="$vuetify.rtl" v-model="isDrawerOpen">
 
         <div class="invisible md:visible  mt-4 ">
             <center>
                 PHILOBOT
             </center>
         </div>
-
-        
 
         <v-list expand shaped class="  ">
             <!-- <UserMenu-NavbarLink path="/" title="Home" :icon="require('~/static/png/018-pantone.png')"></UserMenu-NavbarLink> -->
@@ -98,7 +96,8 @@
             <UserMenu-NavbarLink path="/level" title="Level"></UserMenu-NavbarLink>
             <!-- <UserMenu-NavbarLink path="/setting" title="Setting"></UserMenu-NavbarLink> -->
             <UserMenu-NavbarLink path="/account" title="Account Setting"></UserMenu-NavbarLink>
-            <UserMenu-NavMenuSectionTitle title="User Setting"></UserMenu-NavMenuSectionTitle>
+            <UserMenu-NavMenuSectionTitle title="Get Help"></UserMenu-NavMenuSectionTitle>
+            <UserMenu-NavbarLink path="/gethelp" title="Get Help"></UserMenu-NavbarLink>
             <div @click="logout()">
                 <UserMenu-NavbarLink path="/logout" title="Logout" :icon="require('~/static/png/1828490.png')"></UserMenu-NavbarLink>
             </div>
@@ -139,6 +138,9 @@ export default {
         }
     },
     methods: {
+        async switchDark(){
+              this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+        },
         async logout() {
             let check = await Web.confirm(`Are you sure to logout.`)
             if (check) {

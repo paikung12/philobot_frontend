@@ -17,7 +17,7 @@
     </v-card-title>
     <div>
         <v-row class=" justify-center m-5 gap-4">
-            <div class="shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden">
+            <div class="valhalla2 shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden">
                 <div class="flex items-center border-b-2 mb-2 py-2">
                     <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.pinimg.com/originals/41/53/7d/41537d55a8ab360ad9300060579a8287.gif'>
                     <span class="ml-4 text-h6 font-weight-light">Robot Trade</span>
@@ -49,15 +49,15 @@
                         <v-divider vertical></v-divider>
                         <div class="  my-1 px-1 w-full sm:my-1 sm:px-1 sm:w-full md:my-1 md:px-1 md:w-full lg:my-1 lg:px-1 lg:w-full xl:my-1 xl:px-1 xl:w-2/5">
                             <div class="flex flex-wrap ml-3">
-                                <span class="text-gray-800 text-xs  mb-2">
+                                <p class="    text-xs  mb-2">
                                     Use robot: 10
-                                </span>
-                                <span class="text-gray-800 text-xs  mb-2">
+                                </p>
+                                <p class="    text-xs  mb-2">
                                     Date: 10/05/2022
-                                </span>
-                                <span class="text-gray-800 text-xs  mb-2">
+                                </p>
+                                <p class="    text-xs  mb-2">
                                     Cypto: BTC ,XRP
-                                </span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </div>
-           <div class="shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden">
+            <div class="valhalla2 shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden">
                 <div class="flex items-center border-b-2 mb-2 py-2">
                     <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.pinimg.com/originals/41/53/7d/41537d55a8ab360ad9300060579a8287.gif'>
                     <span class="ml-4 text-h6 font-weight-light">Robot Trade</span>
@@ -104,15 +104,15 @@
                         <v-divider vertical></v-divider>
                         <div class="  my-1 px-1 w-full sm:my-1 sm:px-1 sm:w-full md:my-1 md:px-1 md:w-full lg:my-1 lg:px-1 lg:w-full xl:my-1 xl:px-1 xl:w-2/5">
                             <div class="flex flex-wrap ml-3">
-                                <span class="text-gray-800 text-xs  mb-2">
+                                <p class="    text-xs  mb-2">
                                     Use robot: 10
-                                </span>
-                                <span class="text-gray-800 text-xs  mb-2">
+                                </p>
+                                <p class="    text-xs  mb-2">
                                     Date: 10/05/2022
-                                </span>
-                                <span class="text-gray-800 text-xs  mb-2">
+                                </p>
+                                <p class="    text-xs  mb-2">
                                     Cypto: BTC ,XRP
-                                </span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <div class="shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden">
+            <div class="valhalla2 shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden">
                 <div class="flex items-center border-b-2 mb-2 py-2">
                     <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.pinimg.com/originals/41/53/7d/41537d55a8ab360ad9300060579a8287.gif'>
                     <span class="ml-4 text-h6 font-weight-light">Robot Trade</span>
@@ -159,15 +159,15 @@
                         <v-divider vertical></v-divider>
                         <div class="  my-1 px-1 w-full sm:my-1 sm:px-1 sm:w-full md:my-1 md:px-1 md:w-full lg:my-1 lg:px-1 lg:w-full xl:my-1 xl:px-1 xl:w-2/5">
                             <div class="flex flex-wrap ml-3">
-                                <span class="text-gray-800 text-xs  mb-2">
+                                <p class="    text-xs  mb-2">
                                     Use robot: 10
-                                </span>
-                                <span class="text-gray-800 text-xs  mb-2">
+                                </p>
+                                <p class="    text-xs  mb-2">
                                     Date: 10/05/2022
-                                </span>
-                                <span class="text-gray-800 text-xs  mb-2">
+                                </p>
+                                <p class="    text-xs  mb-2">
                                     Cypto: BTC ,XRP
-                                </span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -182,7 +182,7 @@
                     </div>
                 </div>
             </div>
-            <div class="shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden">
+            <div class="valhalla2 shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden">
                 <div class="flex items-center border-b-2 mb-2 py-2">
                     <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.pinimg.com/originals/41/53/7d/41537d55a8ab360ad9300060579a8287.gif'>
                     <span class="ml-4 text-h6 font-weight-light">Robot Trade</span>
@@ -214,15 +214,15 @@
                         <v-divider vertical></v-divider>
                         <div class="  my-1 px-1 w-full sm:my-1 sm:px-1 sm:w-full md:my-1 md:px-1 md:w-full lg:my-1 lg:px-1 lg:w-full xl:my-1 xl:px-1 xl:w-2/5">
                             <div class="flex flex-wrap ml-3">
-                                <span class="text-gray-800 text-xs  mb-2">
+                                <p class="    text-xs  mb-2">
                                     Use robot: 10
-                                </span>
-                                <span class="text-gray-800 text-xs  mb-2">
+                                </p>
+                                <p class="    text-xs  mb-2">
                                     Date: 10/05/2022
-                                </span>
-                                <span class="text-gray-800 text-xs  mb-2">
+                                </p>
+                                <p class="    text-xs  mb-2">
                                     Cypto: BTC ,XRP
-                                </span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -237,7 +237,7 @@
                     </div>
                 </div>
             </div>
-            <div class="shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden">
+            <div class="valhalla2 shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden">
                 <div class="flex items-center border-b-2 mb-2 py-2">
                     <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.pinimg.com/originals/41/53/7d/41537d55a8ab360ad9300060579a8287.gif'>
                     <span class="ml-4 text-h6 font-weight-light">Robot Trade</span>
@@ -269,15 +269,15 @@
                         <v-divider vertical></v-divider>
                         <div class="  my-1 px-1 w-full sm:my-1 sm:px-1 sm:w-full md:my-1 md:px-1 md:w-full lg:my-1 lg:px-1 lg:w-full xl:my-1 xl:px-1 xl:w-2/5">
                             <div class="flex flex-wrap ml-3">
-                                <span class="text-gray-800 text-xs  mb-2">
+                                <p class="    text-xs  mb-2">
                                     Use robot: 10
-                                </span>
-                                <span class="text-gray-800 text-xs  mb-2">
+                                </p>
+                                <p class="    text-xs  mb-2">
                                     Date: 10/05/2022
-                                </span>
-                                <span class="text-gray-800 text-xs  mb-2">
+                                </p>
+                                <p class="    text-xs  mb-2">
                                     Cypto: BTC ,XRP
-                                </span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -292,7 +292,7 @@
                     </div>
                 </div>
             </div>
-            <div class="shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden">
+            <div class="valhalla2 shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden">
                 <div class="flex items-center border-b-2 mb-2 py-2">
                     <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.pinimg.com/originals/41/53/7d/41537d55a8ab360ad9300060579a8287.gif'>
                     <span class="ml-4 text-h6 font-weight-light">Robot Trade</span>
@@ -324,15 +324,15 @@
                         <v-divider vertical></v-divider>
                         <div class="  my-1 px-1 w-full sm:my-1 sm:px-1 sm:w-full md:my-1 md:px-1 md:w-full lg:my-1 lg:px-1 lg:w-full xl:my-1 xl:px-1 xl:w-2/5">
                             <div class="flex flex-wrap ml-3">
-                                <span class="text-gray-800 text-xs  mb-2">
+                                <p class="    text-xs  mb-2">
                                     Use robot: 10
-                                </span>
-                                <span class="text-gray-800 text-xs  mb-2">
+                                </p>
+                                <p class="    text-xs  mb-2">
                                     Date: 10/05/2022
-                                </span>
-                                <span class="text-gray-800 text-xs  mb-2">
+                                </p>
+                                <p class="    text-xs  mb-2">
                                     Cypto: BTC ,XRP
-                                </span>
+                                </p>
                             </div>
                         </div>
                     </div>
